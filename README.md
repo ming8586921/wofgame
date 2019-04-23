@@ -2,7 +2,7 @@
 # wofgame
 The first game for blockchain, see https://wofgame.github.io
 # Rule analysis
-* 25% Dynamic within 3 generations
+* 25% dynamic within 3 generations
 * 12% weight distribution
 * 15% prize pool
 * 40% static + dynamic precipitation + weight dividend precipitation
@@ -22,7 +22,7 @@ function rand(uint256 _length, address _pAddress)
 }
 
 function inc()
-		private
+	private
         view
         returns(uint256) 
 {
