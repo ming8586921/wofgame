@@ -9,3 +9,31 @@ The first game for blockchain, see https://wofgame.github.io
 * 3% platform fee
 
 # Source code analysis
+## Floating income calculation
+
+```Solidity
+function rand(uint256 _length, address _pAddress) 
+        private
+        view
+        returns(uint256) 
+{
+	uint256 random = uint256(keccak256(abi.encodePacked(block.difficulty, now, _pAddress, inc_)));
+	return random%_length;
+}
+
+function inc()
+		private
+        view
+        returns(uint256) 
+{
+	if(rand(100, _pAddress) < 50){
+		inc_ = inc_ + 3;
+	}else{
+		inc_ = inc_ + 5;
+	}
+	return inc_;
+}
+
+```
+* Random number generation
+* Random seed acquisition
