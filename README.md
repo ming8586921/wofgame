@@ -26,12 +26,7 @@ function inc()
         view
         returns(uint256) 
 {
-	if(rand(100, _pAddress) < 50){
-		inc_ = inc_ + 3;
-	}else{
-		inc_ = inc_ + 5;
-	}
-	return inc_;
+	return rand(100, _pAddress) < 50 ? inc_+=3 : inc+=5;
 }
 
 ```
