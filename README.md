@@ -5,9 +5,18 @@ The first game for blockchain, see https://wofgame.github.io
 * 25% dynamic within 3 generations
 * 12% weight distribution
 * 15% prize pool
-* 40% static + dynamic precipitation + weight dividend precipitation
+* >= 40% static + dynamic precipitation + weight dividend precipitation + ticket income
 * 3% platform fee
+* 5% Team node distribution
 
+```Solidity
+uint256 public gdy_ = 25;
+uint256 public gstatic_ = 40;
+uint256 public gbpool_ = 15;
+uint256 gfee = 3;
+uint256 gangle = 5;
+uint256 gteam = 12
+```
 # Source code analysis
 ## Floating income calculation
 
