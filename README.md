@@ -33,6 +33,7 @@ function inc()
 * Random number generation
 * Random seed acquisition
 
+## Static income calculation
 ```Solidity
 function calc(address _pAddress, uint256 _canIncome, uint256 _day, uint256 _probFixResW)
         private
